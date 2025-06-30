@@ -1,0 +1,56 @@
+1)Admin (only login)
+2)TaskManagement (i)employee name/user name
+ ii)tasktitle 
+ iii) Description
+ iv) deadline
+ v) remarks
+vi)meetings
+ )
+ 3)user creation /employee registration
+ employee model{
+    name,
+    email,
+    phoneno,
+    password,
+    department,
+    tasks[]
+ }
+Controllers and Routers:
+(Related to admin)
+1)add task,delete task
+user 
+
+1)login
+2)usertasks(model)
+3)status update(boolean)
+4)status description
+
+backend topics
+1)creating server
+2)MVC Architecture
+3)Route defining
+4)Database connectivity
+5)CRUD operations
+
+Advance topics
+1)Authentication
+i)session authentication
+ii)jwt authentication
+iii)socialmedia o-authentication
+2)Authorization
+
+optional
+
+1)Reddis-cache
+2)Websockets
+3)webRTC
+4)ngnix,apache(reverse proxy,load balancing ,caching)
+5)docker
+6)CI/CD(github actions /jenkins )
+7)kafka
+
+
+
+
+
+
