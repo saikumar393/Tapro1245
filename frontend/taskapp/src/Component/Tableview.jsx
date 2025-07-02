@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Tableview = () => {
+const Tableview = ({data}) => {
   return (
     <div className='tablesection ' >
          <table style={{border:'1px solid grey'}} >
@@ -12,8 +12,8 @@ const Tableview = () => {
                 <th>Status</th>
               </tr>
             </thead>
-           <tbody>
-            <tr>
+           {/* <tbody> */}
+            {/* <tr>
                 <td>Vinay</td>
                 <td>CSE</td>
                 <td>Project1</td>
@@ -37,7 +37,24 @@ const Tableview = () => {
                 <td>Project1</td>
                 <td>Completed</td>
             </tr>
-           </tbody>
+           </tbody> */}
+            <tbody>
+          {data && data.length > 0 ? (
+            data.map((employee) => (
+              <tr key={employee.id}>
+                <td>{employee.name}</td>
+                <td>{employee.department}</td>
+                <td>{employee.email}</td>
+                <td>{employee. tasks}</td>
+                {/* Add other fields based on your employee object */}
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="3">No employee data found</td>
+            </tr>
+          )}
+        </tbody>
             </table>      
     </div>
   )

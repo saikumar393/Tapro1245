@@ -5,6 +5,7 @@ import React from 'react'
   import { BsListTask } from "react-icons/bs";
   import { GrDocumentPerformance } from "react-icons/gr";
   import { MdTitle } from "react-icons/md";
+  import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
 
@@ -17,12 +18,16 @@ const Navbar = () => {
         <div className='menu'> 
             
         <ul>
+            <Link to="/">
             <li>Home
               <FaHome className='Homeicon  iconstyle'/>
             </li>
+            </Link>
+            <Link to='/addemp'>
             <li>Employees
                 <FcAbout className='Abouticon  iconstyle'/>
             </li>
+            </Link>
             <li>Task
               <BsListTask className='Taskicon  iconstyle'/>
             </li>
